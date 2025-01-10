@@ -1,3 +1,6 @@
 # TypeWriter
 
-## npm module will be added soon. For now use `only_main_files` branch.
+<img src="./demo.gif" alt="demo"></img>
+## Instalation
+`npm install ultimate-type-writer`
+## Usage
