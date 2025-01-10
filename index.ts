@@ -1,5 +1,9 @@
-import module_TypeWriter from "./src/type_writer.module";
+import module_SimpleTypeWriter from "./src/simple_type_writer/type_writer.module";
+
+export function CustomTypeWriter() {
+
+}
 
 export default function TypeWriter() {
-    return module_TypeWriter;
+    return module_SimpleTypeWriter;
 }

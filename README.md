@@ -1,14 +1,17 @@
-# TypeWriter
+# UltimateTypeWriter
 
 <img src="./demo.gif" alt="demo"></img>
 ## Instalation
 `npm install ultimate-type-writer`
 ## Using
-### Importing module
-```ts
+There are 2 different ways to use this package<br>
+Hard way's need more props to set, but it will provide more customizable effect
+### Simple way
+#### Importing module
+```js
 import TypeWriter from "ultimate-type-writer";
 ```
-### Props
+#### Props
 ```js
 <TypeWriter
 	strings: string[], // strings for typing
@@ -21,7 +24,7 @@ import TypeWriter from "ultimate-type-writer";
 	cursorClassName?: string // (optional) "cursor" by default. Additional info provided below
 />
 ```
-### Example
+#### Example
 ```js
 import TypeWriter from "ultimate-type-writer";
 
@@ -43,10 +46,17 @@ function ComponentWithTypeWriter() {
   	</div>
 }
 ```
-### Return format of \<TypeWriter\>
+#### Return format of \<TypeWriter\>
 ```js
 <span className={wrapperClassName}>
 	{displayedText}
 	{isCursor ? <span className={cursorClassName}>|</span> : <></>}
 </span>
 ```
+
+### Hard way
+#### Importing module
+```js
+import { CustomTypeWriter } from "ultimate-type-writer";
+```
+Coming soon
