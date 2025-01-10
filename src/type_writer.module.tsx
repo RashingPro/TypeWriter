@@ -54,7 +54,7 @@ export default function TypeWriter(
                 return;
             }
         } else {
-            if (debug) console.debug(`printing. currentTextIndex: ${strings[currentTextIndex][displayedText.length]}`)
+            if (debug) console.debug(`printing. currentTextIndex: ${currentTextIndex}`)
             setDisplayedText((prevState: string) => {
                 return prevState + strings[currentTextIndex][prevState.length]
             })

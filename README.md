@@ -33,11 +33,11 @@ const strings = {
 
 function ComponentWithTypeWriter() {
     return <div className={"containerWithTypeWriter"}>
-		<span></span>
+		<span>Author likes </span> {/*Dont forget add space in the end of constant part*/}
 		<TypeWriter
 			strings={strings}
-			delayAfterDelete=1000,
-			delayAfterPrint=1000,
+			delayAfterDelete=1000
+			delayAfterPrint=1000
 			delayBetweenSymbol=60
 		/>
   	</div>
