@@ -2,7 +2,7 @@
   "name": "ultimate-type-writer",
   "version": "1.0.1",
   "author": "Rashing (https://github.com/RashingPro)",
-  "license": "LGPL-3.0-only",
+  "license": "LGPL-2.1-or-later",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RashingPro/UltimateTypeWriter.git"
