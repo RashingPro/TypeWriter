@@ -5,7 +5,8 @@
 `npm install ultimate-type-writer`
 ## Using
 There are 2 different ways to use this package<br>
-Hard way's need more props to set, but it will provide more customizable effect
+Simple way less customizable, but easy to use
+Hard way more customizable, but harder to use
 ### Simple way
 #### Importing module
 ```js
@@ -23,6 +24,13 @@ import TypeWriter from "ultimate-type-writer";
 	wrapperClassName?: string, // (optional) "type_writer_wrapper" by default. Additional info provided below
 	cursorClassName?: string // (optional) "cursor" by default. Additional info provided below
 />
+```
+#### Return format of \<TypeWriter\>
+```js
+<span className={wrapperClassName}>
+	{displayedText}
+	{isCursor ? <span className={cursorClassName}>|</span> : <></>}
+</span>
 ```
 #### Example
 ```js
@@ -46,17 +54,15 @@ function ComponentWithTypeWriter() {
   	</div>
 }
 ```
-#### Return format of \<TypeWriter\>
-```js
-<span className={wrapperClassName}>
-	{displayedText}
-	{isCursor ? <span className={cursorClassName}>|</span> : <></>}
-</span>
-```
 
 ### Hard way
 #### Importing module
 ```js
 import { CustomTypeWriter } from "ultimate-type-writer";
 ```
-Coming soon
+#### Props
+```js
+<CustomTypeWriter
+    
+/>
+```
