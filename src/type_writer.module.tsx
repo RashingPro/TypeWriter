@@ -1,6 +1,7 @@
 "use client"
 
 import {useEffect, useState} from "react";
+import * as React from "react";
 import "./type_writer_module.css";
 
 interface TypeWriterProps {
@@ -24,7 +25,7 @@ export default function TypeWriter(
         wrapperClassName = "type_writer_wrapper",
         cursorClassName = "cursor"
     }: TypeWriterProps
-) {
+): React.ReactNode {
     const [displayedText, setDisplayedText] = useState("")
     const [currentTextIndex, setCurrentTextIndex] = useState(0);
     const [isPaused, setIsPaused] = useState(false);
